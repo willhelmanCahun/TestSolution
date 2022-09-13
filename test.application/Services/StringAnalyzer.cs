@@ -3,6 +3,9 @@ using test.application.Services.Interfaces;
 
 namespace test.application.Services
 {
+    /// <summary>
+    /// Implementing the use of the interface IStringAnalyzer we ensure the appliance of the Open/Close principle, allowing another derived clases from the same interface implementing their own ReArrangeString method
+    /// </summary>
     public class StringAnalyzer : IStringAnalyzer
     {
         /// <summary>
@@ -11,6 +14,7 @@ namespace test.application.Services
         /// <para>arrayToRearragnge={ "Sonia", "Maria", "Wood", "Dempster" }</para>
         /// <para>desireOrder=={ "4", "1", "2", "3" };</para>
         /// <para>output={ "Dempster", "Sonia", "Maria", "Wood" };</para>
+        /// <para>This methos accomplish  the unique responsability of re arrange an array string, using Single responsability concept</para>
         /// </summary>
         /// <param name="arrayToRearrange">Array of strings to be rearrange sample individuals={ "Sonia", "Maria", "Wood", "Dempster" }</param>
         /// <param name="desireOrder">Array of strings that contains the indexes of the desire element in the position,sample desireOrder={ "4", "1", "2", "3" };</param>

@@ -9,6 +9,7 @@ namespace test.application.Services.Interfaces
         /// <para>arrayToRearragnge={ "Sonia", "Maria", "Wood", "Dempster" }</para>
         /// <para>desireOrder=={ "4", "1", "2", "3" };</para>
         /// <para>output={ "Dempster", "Sonia", "Maria", "Wood" };</para>
+        /// <para>As we could have many tools to analyze strings, we use Interfaces so if there is a similar tool we don't force clients to implement all methods</para>
         /// </summary>
         /// <param name="arrayToRearrange">Array of strings to be rearrange sample individuals={ "Sonia", "Maria", "Wood", "Dempster" }</param>
         /// <param name="desireOrder">Array of strings that contains the indexes of the desire element in the position,sample desireOrder={ "4", "1", "2", "3" };</param>

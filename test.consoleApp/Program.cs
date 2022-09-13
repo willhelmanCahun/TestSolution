@@ -9,6 +9,10 @@ namespace test.consoleApp
     /// </summary>
     class Program
     {
+        /// <summary>
+        /// To keep this higer class indepentent of low level moduls, its implementd using dependency injection
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             //setup our DI

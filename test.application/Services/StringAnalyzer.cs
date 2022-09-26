@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using test.application.Services.Interfaces;
 
 namespace test.application.Services
@@ -59,6 +60,9 @@ namespace test.application.Services
                 throw new Exception("Individual  Names Array and Desire order array number of elements does not match, please verify!");
             }
 
+            if (desireOrder.Length != desireOrder.Distinct().Count()) {
+                throw new Exception("Desire order array contains duplicated values");
+            }
             int maxIndexNumber = arrayToRearrange.Length;
             foreach (string element in desireOrder)
             {
@@ -72,6 +76,7 @@ namespace test.application.Services
                     if (number > maxIndexNumber || number<=0) {
                         throw new Exception("Desire order array element is out of bounds");
                     }
+                    
                 }
                 
             }
